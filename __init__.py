@@ -12,13 +12,15 @@ bl_info = {
     'tracker_url': 'https://github.com/gabrielmontagne/blender-addon-copy-particle-animation/issues'
 }
 
+size = 20
+
 class ANIM_OP_copy_particle_animation(Operator):
     """Copy particle animation"""
     bl_idname = 'rojored.copy_particle_anim'
     bl_label = 'Copy particle animation'
     bl_options = {'UNDO', 'PRESET'}
 
-    particle_indices: IntVectorProperty(name='particle indices', size=5, default=[0,1,2,3,4])
+    particle_indices: IntVectorProperty(name='particle indices', size=size, default=range(size))
     frame_start: IntProperty(name='start frame', default=1)
     frame_end: IntProperty(name='end frame', default=100)
     frame_step: IntProperty(name='frame step', default=1)
