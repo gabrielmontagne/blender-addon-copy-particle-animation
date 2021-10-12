@@ -1,0 +1,16 @@
+copy particle animation into other object keyframes
+
+to use,
+
+  select the target objects, then set as active object the object hosting the particle system.
+  then run copy particle animation.
+
+  select the particle indices you want to use, and the frame range and step.
+
+compiles,
+
+    - https://sketchfab.com/blogs/community/baking-particles-sketchfab-blender-edition/
+    - https://blender.stackexchange.com/questions/4956/convert-particle-system-to-animated-meshes?answertab=active#tab-top
+    - https://devtalk.blender.org/t/manipulating-particles-in-python/7552/2
+
+warning, this is very parietal art, handling no edge cases whatsoever.
